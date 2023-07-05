@@ -1,0 +1,100 @@
+<!--
+JavaScript Arrays:
+An array is an object that can store large amounts of data of the same type.
+-->
+
+<!--Create an Array:-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables!</title>
+    <script type="text/javascript">
+      //create an array called 'students'
+      var students = ["John", "Ann", "Kevin"];
+      //add values to existing array
+      students[3] = "Emma";
+      students[4] = "Rose";
+      //access value at index 2 - "Kevin"
+      document.write("<br>" + students[2]);
+
+      // create an array using a constructor
+      var fruits = new Array();
+      // add values to the array
+      fruits[0] = "apple";
+      fruits[1] = "mango";
+      fruits[2] = "cherry";
+      //access value at index 2 - "cherry"
+      document.write("<br>" + fruits[2] + "<br>");
+
+      //JavaScript Array Methods:
+      //You can get the value of a property by specifying arrayname.property
+      //and the output of a method by specifying arrayname.method()
+
+      var students = new Array("John", "Ann", "Aaron", "Edwin", "Elizabeth");
+      Array.prototype.displayItems=function(){
+        for (i=0;i<this.length;i++){
+          document.write(this[i] + "<br>");
+        }
+      }
+		document.write("<br>students array<br>");
+		students.displayItems();
+		document.write("<br>The number of items in students array is " + students.length + "<br>");
+		document.write("<br>The SORTED students array<br>");
+		students.sort();
+		students.displayItems();
+		document.write("<br>The REVERSED students array<br>");
+		students.reverse();
+		students.displayItems();
+		document.write("<br>The students array after REMOVING the LAST item<br>");
+		students.pop();
+		students.displayItems();
+    document.write("<br>The students array after PUSH<br>");
+    students.push("New Stuff");
+		students.displayItems();
+    </script>
+  </head>
+  <body></body>
+</html>
+
+<!--
+Expected Output:
+Kevin
+cherry
+
+students array
+John
+Ann
+Aaron
+Edwin
+Elizabeth
+
+The number of items in students array is 5
+
+The SORTED students array
+Aaron
+Ann
+Edwin
+Elizabeth
+John
+
+The REVERSED students array
+John
+Elizabeth
+Edwin
+Ann
+Aaron
+
+The students array after REMOVING the LAST item
+John
+Elizabeth
+Edwin
+Ann
+
+The students array after PUSH
+John
+Elizabeth
+Edwin
+Ann
+New Stuff
+-->
