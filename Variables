@@ -1,0 +1,37 @@
+<!--
+JavaScript Variables:
+Variables are used to store values (name = “John”) or expressions (sum = x + y).
+Before using a variable, you first need to declare it.
+You have to use the keyword 'var', give it a name, and assign a value to it.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables!</title>
+    <script type="text/javascript">
+      var one = 22;
+      var two = 3;
+      var add = one + two;
+      var minus = one - two;
+      var multiply = one * two;
+      var divide = one / two;
+      document.write("First No: = " + one + " <br> Second No: = " + two + " <br> ");
+      document.write(one + " + " + two + " = " + add + " <br> ");
+      document.write(one + " - " + two + " = " + minus + " <br> ");
+      document.write(one + " * " + two + " = " + multiply + " <br> ");
+      document.write(one + " / " + two + " = " + divide + " <br> ");
+    </script>
+  </head>
+  <body></body>
+</html>
+
+<!--
+Expected Output:
+First No: = 22
+Second No: = 3
+22 + 3 = 25
+22 - 3 = 19
+22 * 3 = 66
+22 / 3 = 7.333333333333333
+-->
