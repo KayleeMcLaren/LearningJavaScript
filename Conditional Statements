@@ -1,0 +1,84 @@
+<!-- Conditional Statements: if, else, else if
+
+There are mainly three types of conditional statements in JavaScript:
+
+1. if Statement: An ‘if’ statement executes code based on a condition
+2. if… else Statement: The if… else statement consists of two blocks of code; when a condition is true 
+it executes the first block of code and when the condition is false, it executes the second block of code
+3. if… else if… else Statement: When multiple conditions need to be tested and different blocks of code need to 
+be executed based on which condition is true
+-->
+
+
+<!-- If Statement -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IF Statments!!!</title>
+	<script type="text/javascript">
+		var age = prompt("Please enter your age");
+		if(age>=18)
+		document.write("You are an adult <br />");
+		if(age<18)
+		document.write("You are NOT an adult <br />");
+	</script>
+</head>
+<body>
+</body>
+</html>
+<!-- Expected Output: 
+Pop up box asking for you age appears
+Inputting "30" results in "You are an adult"
+-->
+
+
+<!-- If... Else Statement -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>If...Else Statments!!!</title>
+	<script type="text/javascript">
+		// Get the current hours
+		var hours = new Date().getHours();
+		if(hours<12)
+		document.write("Good Morning!!!<br />");
+		else
+		document.write("Good Afternoon/Evening!!!<br />");
+	</script>
+</head>
+<body>
+</body>
+</html>
+
+<!-- Expected Output: 
+If the time is 20:15
+The result will be "Good Afternoon/Evening!!!"
+-->
+
+
+<!-- If… Else If… Else statement Statement -->
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var one = prompt("Enter the first number");
+		var two = prompt("Enter the second number");
+		one = parseInt(one);
+		two = parseInt(two);
+		if (one == two)
+			document.write(one + " is equal to " + two + ".");
+		else if (one<two)
+			document.write(one + " is less than " + two + ".");
+		else
+			document.write(one + " is greater than " + two + ".");
+	</script>
+</head>
+<body>
+</body>
+</html>
+
+<!-- Expected Output: 
+A popup box asks for a first number and then a second popup box asks for a second number
+If the first number entered is 15 and then second number entered is 3:
+The result will be 15 is greater than 3.
+-->
